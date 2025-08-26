@@ -108,15 +108,16 @@ def safe_get(d: Dict[str, Any], *keys: str, default: Any = None) -> Any:
 # -----------------------------
 
 class BitbucketCloudClient:
-    def __init__(self, workspace: str, username: str, app_password: str, rate_limit_sleep: float = 0.25):
+    def __init__(self, workspace: str, username: Optional[str] = None, app_password: Optional[str] = None, access_token: Optional[str] = None, rate_limit_sleep: float = 0.25):
         self.base = "https://api.bitbucket.org/2.0"
         self.workspace = workspace
-        self.auth = (username, app_password)
+        self.headers = {"Authorization": f"Bearer {access_token}"} if access_token else {}
+        self.auth = None if access_token else (username, app_password)
         self.rate_limit_sleep = rate_limit_sleep
 
     def _get(self, url: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         time.sleep(self.rate_limit_sleep)
-        r = requests.get(url, auth=self.auth, params=params, timeout=60)
+        r = requests.get(url, auth=self.auth, headers=self.headers, params=params, timeout=60)
         if r.status_code >= 400:
             raise RuntimeError(f"Bitbucket Cloud API error {r.status_code}: {r.text}")
         return r.json()
@@ -194,7 +195,7 @@ class BitbucketCloudClient:
             ref = "main"
         url = f"{self.base}/repositories/{self.workspace}/{repo_slug}/src/{ref}/{path}"
         time.sleep(self.rate_limit_sleep)
-        r = requests.get(url, auth=self.auth, timeout=60)
+        r = requests.get(url, auth=self.auth, headers=self.headers, timeout=60)
         if r.status_code == 404:
             return None
         if r.status_code >= 400:
@@ -569,6 +570,7 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument("--workspace", help="Bitbucket Cloud workspace slug")
     p.add_argument("--username", help="Username for Bitbucket (Cloud or Server/DC)")
     p.add_argument("--app-password", dest="app_password", help="Bitbucket Cloud App Password (use with --cloud)")
+    p.add_argument("--access-token", dest="access_token", help="Bitbucket Cloud Access Token (Bearer)")
 
     # Server/DC auth / params
     p.add_argument("--base-url", help="Bitbucket Server/DC base URL, e.g. https://bitbucket.example.com")
@@ -604,7 +606,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         if missing:
             print(f"Missing required Cloud params: {', '.join(missing)}", file=sys.stderr)
             return 2
-        client = BitbucketCloudClient(workspace=args.workspace, username=args.username, app_password=args.app_password)
+        client = BitbucketCloudClient(workspace=args.workspace, username=args.username, app_password=args.app_password, access_token=getattr(args, "access_token", None))
         runner.run_cloud(client)
 
     elif args.server:
