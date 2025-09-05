@@ -1,0 +1,12 @@
+{
+  "mode": "cloud",
+  "workspace": "solutionsmetrixcrmdev",
+  "generated": "2025-09-04T20:20:48+00:00",
+  "counts": {
+    "projects": 8,
+    "repos": 4,
+    "pipelines_rows": 574,
+    "variables_rows": 0,
+    "branches_rows": 56
+  }
+}

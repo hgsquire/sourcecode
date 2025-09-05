@@ -1,0 +1,49 @@
+image: solutionsmetrix/atlassian-default-image-plus-clio:latest
+
+definitions:
+  steps:
+    - step: &build-and-deploy-creatio-package
+        name: Build Creatio Package        
+        runs-on:
+          - self.hosted
+          - linux
+        artifacts:
+          - creatio_package.zip
+        script:
+          # Step 1: Clone the Clio scripts repository with verbose output
+          - GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone https://x-token-auth:$PIPELINESCRIPTS_XAUTH_TOKEN@bitbucket.org/solutionsmetrixcrmdev/pipeline-bash-scripts.git
+          
+          # Step 2: Ensure the necessary directories are available for copying
+          - mkdir -p /tmp/runner-repo
+          - cp -r * /tmp/runner-repo/
+          
+          # Step 3: Pre build scripts
+          - chmod +x ./pipeline-bash-scripts/pre-build.sh
+          - ./pipeline-bash-scripts/pre-build.sh
+          
+          # Step 4: Run the build script inside the container
+          - chmod +x ./pipeline-bash-scripts/build-clio-package.sh
+          - ./pipeline-bash-scripts/build-clio-package.sh
+          
+          # Step 5: Run the deploy script inside the container
+          - chmod +x ./pipeline-bash-scripts/deploy-clio-package.sh
+          - ./pipeline-bash-scripts/deploy-clio-package.sh  
+
+          # Step 6: Post build scripts
+          - chmod +x ./pipeline-bash-scripts/post-build.sh
+          - ./pipeline-bash-scripts/post-build.sh
+          
+pipelines:
+  branches:
+    develop:               
+      - step:
+          <<: *build-and-deploy-creatio-package
+          name: "Deploy to QA"
+          deployment: QA
+    
+  custom:
+    deploy-to-uat:
+      - step:
+          <<: *build-and-deploy-creatio-package
+          name: "Deploy to UAT"
+          deployment: UAT

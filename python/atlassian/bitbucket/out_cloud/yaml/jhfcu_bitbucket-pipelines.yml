@@ -1,0 +1,60 @@
+image: solutionsmetrix/atlassian-default-image-plus-clio:latest
+
+definitions:
+  steps:
+    - step: &start-process
+        name: Start Process
+        runs-on:
+          - self.hosted
+          - linux
+        script:
+          - echo "Starting Process"
+          
+    - step: &build-and-deploy-creatio-package
+        name: Build Creatio Package        
+        runs-on:
+          - self.hosted
+          - linux
+        artifacts:
+          - creatio_package.zip
+        script:
+          # Step 1: Install dependencies
+          - apt-get update && apt-get install -y ca-certificates curl git
+          
+          # Step 2: Update CA certificates and configure Git to use OpenSSL
+          - update-ca-certificates
+          - git config --global http.sslBackend openssl
+          
+          # Step 3: Clone the Clio scripts repository with verbose output
+          - GIT_TRACE=1 GIT_CURL_VERBOSE=1 git clone https://x-token-auth:$PIPELINESCRIPTS_XAUTH_TOKEN@bitbucket.org/solutionsmetrixcrmdev/pipeline-bash-scripts.git
+          
+          # Step 4: Ensure the necessary directories are available for copying
+          - mkdir -p /tmp/runner-repo
+          - cp -r * /tmp/runner-repo/
+          
+          # Step 5: Run the build script inside the container
+          - chmod +x ./pipeline-bash-scripts/build-clio-package.sh
+          - ./pipeline-bash-scripts/build-clio-package.sh
+          
+          # Step 6: Run the deploy script inside the container
+          - chmod +x ./pipeline-bash-scripts/deploy-clio-package.sh
+          - ./pipeline-bash-scripts/deploy-clio-package.sh          
+          
+pipelines:
+  branches:
+    dev: 
+      - step:
+          <<: *build-and-deploy-creatio-package
+          name: "Deploy to Customer QA"          
+          deployment: CustomerQA
+  
+    master:    
+      - step:
+          <<: *start-process
+          name: "Start Process"
+          
+      - step:
+          <<: *build-and-deploy-creatio-package
+          name: "Deploy to Production"
+          deployment: Production
+          trigger: manual          

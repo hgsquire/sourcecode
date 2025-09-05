@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Bitbucket Inventory & Relationship Mapper
+Bitbucket Instance Analysis & Relationship Mapper
 ----------------------------------------
 
 Purpose
@@ -24,7 +24,7 @@ Bitbucket Server/DC: supply username and password (or Personal Access Token as t
 Quick Examples
 ==============
 # Bitbucket Cloud (pipelines supported):
-python bitbucket_inventory.py \
+python instance_analysis.py \
   --cloud \
   --workspace YOUR_WORKSPACE_SLUG \
   --username YOUR_USERNAME \
@@ -34,7 +34,7 @@ python bitbucket_inventory.py \
   --graph
 
 # Bitbucket Server/DC (no pipelines feature):
-python bitbucket_inventory.py \
+python instance_analysis.py \
   --server \
   --base-url https://bitbucket.example.com \
   --username admin \
@@ -62,6 +62,8 @@ import time
 import datetime as dt
 from dataclasses import dataclass
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+import configparser
+from pathlib import Path
 
 try:
     import requests
@@ -78,7 +80,8 @@ def ensure_outdir(outdir: str) -> None:
 
 
 def iso_now() -> str:
-    return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    # Use timezone-aware UTC to avoid deprecation warnings on Python 3.12+
+    return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
 
 def write_json(path: str, data: Any) -> None:
@@ -101,6 +104,55 @@ def safe_get(d: Dict[str, Any], *keys: str, default: Any = None) -> Any:
             return default
         cur = cur[k]
     return cur
+
+# -----------------------------
+# Config helpers (env + INI file; default filename: auth.ini)
+# -----------------------------
+
+def first_nonempty(*vals):
+    for v in vals:
+        if v is None:
+            continue
+        if isinstance(v, str) and v.strip() == "":
+            continue
+        return v
+    return None
+
+
+def asbool(v, default=True):
+    if v is None:
+        return default
+    if isinstance(v, bool):
+        return v
+    s = str(v).strip().lower()
+    return s in ("1", "true", "t", "yes", "y", "on")
+
+
+def config_candidates(user_path: Optional[str]) -> List[str]:
+    cands: List[str] = []
+    if user_path:
+        cands.append(user_path)
+    # project local
+    cands.append(os.path.join(os.getcwd(), "auth.ini"))
+    # Windows APPDATA
+    appdata = os.getenv("APPDATA")
+    if appdata:
+        cands.append(os.path.join(appdata, "BitbucketInventory", "auth.ini"))
+    # *nix ~/.config
+    cands.append(os.path.join(Path.home(), ".config", "bitbucket_inventory", "auth.ini"))
+    return cands
+
+
+def load_config(paths: List[str]) -> Optional[configparser.ConfigParser]:
+    cfg = configparser.ConfigParser()
+    found = cfg.read([p for p in paths if p])
+    return cfg if found else None
+
+
+def cfg_get(cfg: Optional[configparser.ConfigParser], section: str, option: str) -> Optional[str]:
+    if cfg and cfg.has_option(section, option):
+        return cfg.get(section, option)
+    return None
 
 
 # -----------------------------
@@ -168,7 +220,30 @@ class BitbucketCloudClient:
         return list(self._paginate(f"/repositories/{self.workspace}/{repo_slug}/pipelines/{uuid}/steps"))
 
     def list_workspace_variables(self) -> List[Dict[str, Any]]:
-        return list(self._paginate(f"/workspaces/{self.workspace}/pipelines_config/variables/"))
+        """Return workspace-level pipeline variables if accessible.
+        Gracefully handle 404/403 by returning an empty list (feature not available or insufficient perms)."""
+        url = f"{self.base}/workspaces/{self.workspace}/pipelines-config/variables/"
+        try:
+            # Probe once to get a clear status
+            time.sleep(self.rate_limit_sleep)
+            r = requests.get(url, auth=self.auth, headers=getattr(self, 'headers', {}), timeout=60)
+            if r.status_code == 404:
+                print(f"[Cloud] Workspace variables endpoint not found for workspace '{self.workspace}' (HTTP 404). Skipping.")
+                return []
+            if r.status_code == 403:
+                print(f"[Cloud] No permission to read workspace variables (HTTP 403). Skipping.")
+                return []
+            if r.status_code >= 400:
+                raise RuntimeError(f"Bitbucket Cloud API error {r.status_code}: {r.text}")
+            # If OK, paginate for full list
+            return list(self._paginate(f"/workspaces/{self.workspace}/pipelines-config/variables/"))
+        except RuntimeError as e:
+            # Defensive: swallow 404/403 raised from paginate path if any
+            msg = str(e)
+            if " 404:" in msg or " 403:" in msg:
+                print(f"[Cloud] Workspace variables not accessible ({msg.strip()}). Skipping.")
+                return []
+            raise
 
     def list_repo_variables(self, repo_slug: str) -> List[Dict[str, Any]]:
         return list(self._paginate(f"/repositories/{self.workspace}/{repo_slug}/pipelines_config/variables/"))
@@ -275,8 +350,48 @@ class InventoryRunner:
         ensure_outdir(self.outdir)
         self.edges: List[Tuple[str, str, str, str, str]] = []  # (parent_type, parent_id, child_type, child_id, label)
 
+    def _preflight_cloud(self, client: BitbucketCloudClient) -> None:
+        """Validate that auth works and the configured workspace is accessible.
+        Provides actionable error messages for common pitfalls.
+        """
+        import requests
+        is_bearer = bool(getattr(client, "headers", {}).get("Authorization", "").startswith("Bearer "))
+        mode = "Bearer" if is_bearer else "Basic"
+        print(f"[Cloud] Auth mode: {mode}")
+        # Primary probe
+        try:
+            if is_bearer:
+                r = requests.get(f"{client.base}/workspaces?role=member", headers=client.headers, timeout=60)
+            else:
+                r = requests.get(f"{client.base}/user", auth=client.auth, timeout=60)
+        except Exception as e:
+            raise RuntimeError(f"Failed to reach Bitbucket API: {e}")
+        if r.status_code == 401:
+            if is_bearer:
+                raise RuntimeError(
+                    "401 Unauthorized: Bearer token rejected. If your token starts with 'ATATT', that's an Atlassian API token (Basic only). "
+                    "Use it via username=email + app_password=token, or create a Bitbucket Access Token and use --access-token."
+                )
+            else:
+                raise RuntimeError(
+                    "401 Unauthorized: Basic auth rejected. Ensure username is your Atlassian account email and the password is a Bitbucket-enabled API token."
+                )
+        if r.status_code >= 400:
+            raise RuntimeError(f"Bitbucket API preflight failed (HTTP {r.status_code}): {r.text}")
+        # Workspace visibility
+        if is_bearer:
+            wr = requests.get(f"{client.base}/workspaces?role=member", headers=client.headers, timeout=60)
+        else:
+            wr = requests.get(f"{client.base}/workspaces?role=member", auth=client.auth, timeout=60)
+        if wr.status_code == 200:
+            slugs = [w.get("slug") for w in wr.json().get("values", [])]
+            if getattr(client, "workspace", None) and client.workspace not in slugs:
+                print(f"[WARN] Workspace '{client.workspace}' not found in your memberships: {', '.join(slugs) or '(none)'}")
+
     # -------- Cloud path --------
     def run_cloud(self, client: BitbucketCloudClient) -> None:
+        print("[Cloud] Verifying credentials…")
+        self._preflight_cloud(client)
         print("[Cloud] Fetching projects…")
         projects = client.list_projects()
 
@@ -586,6 +701,8 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument("--include-pipeline-yaml", action="store_true", help="Attempt to fetch bitbucket-pipelines.yml per repo (Cloud)")
     p.add_argument("--max-pipelines-per-repo", type=int, default=None, help="Limit pipelines fetched per repo (Cloud)")
 
+    p.add_argument("--config", help="Path to INI config file (optional)")
+
     return p.parse_args(argv)
 
 
@@ -601,22 +718,87 @@ def main(argv: Optional[List[str]] = None) -> int:
     runner = InventoryRunner(outdir, opts)
 
     if args.cloud:
-        # Validate required params
-        missing = [k for k in ("workspace", "username", "app_password") if getattr(args, k) in (None, "")]
-        if missing:
-            print(f"Missing required Cloud params: {', '.join(missing)}", file=sys.stderr)
+        # Resolve values from args > env > config
+        cfg = load_config(config_candidates(getattr(args, "config", None)))
+        workspace = first_nonempty(
+            args.workspace,
+            os.getenv("BB_WORKSPACE"),
+            cfg_get(cfg, "cloud", "workspace"),
+        )
+        username = first_nonempty(
+            args.username,
+            os.getenv("BB_USERNAME"),
+            cfg_get(cfg, "cloud", "username"),
+        )
+        app_password = first_nonempty(
+            args.app_password,
+            os.getenv("BB_APP_PASSWORD"),
+            cfg_get(cfg, "cloud", "app_password"),
+        )
+        access_token = first_nonempty(
+            getattr(args, "access_token", None),
+            os.getenv("BB_ACCESS_TOKEN"),
+            cfg_get(cfg, "cloud", "access_token"),
+        )
+        if not workspace:
+            print("Missing Cloud workspace. Provide --workspace or set BB_WORKSPACE or [cloud].workspace in auth.ini.", file=sys.stderr)
             return 2
-        client = BitbucketCloudClient(workspace=args.workspace, username=args.username, app_password=args.app_password, access_token=getattr(args, "access_token", None))
+        if not (access_token or (username and app_password)):
+            print("Missing Cloud credentials. Provide --access-token OR --username and --app-password (or set env/auth.ini).", file=sys.stderr)
+            return 2
+        client = BitbucketCloudClient(
+            workspace=workspace,
+            username=username,
+            app_password=app_password,
+            access_token=access_token,
+        )
         runner.run_cloud(client)
 
     elif args.server:
-        missing = [k for k in ("base_url", "username", "password") if getattr(args, k) in (None, "")]
+        # Resolve values from args > env > config
+        cfg = load_config(config_candidates(getattr(args, "config", None)))
+        base_url = first_nonempty(
+            args.base_url,
+            os.getenv("BB_BASE_URL"),
+            cfg_get(cfg, "server", "base_url"),
+        )
+        username = first_nonempty(
+            args.username,
+            os.getenv("BB_SERVER_USERNAME"),
+            cfg_get(cfg, "server", "username"),
+            cfg_get(cfg, "server", "server_username"),
+        )
+        password = first_nonempty(
+            args.password,
+            os.getenv("BB_SERVER_PASSWORD"),
+            cfg_get(cfg, "server", "password"),
+        )
+        verify_ssl = asbool(
+            first_nonempty(
+                args.verify_ssl,
+                os.getenv("BB_VERIFY_SSL"),
+                cfg_get(cfg, "server", "verify_ssl"),
+            ),
+            default=True,
+        )
+        project_keys_raw = first_nonempty(
+            " ".join(args.project_keys) if args.project_keys else None,
+            cfg_get(cfg, "server", "project_keys"),
+        )
+        project_keys = project_keys_raw.split() if project_keys_raw else None
+
+        pairs = [
+            ("base_url", base_url),
+            ("username", username),
+            ("password", password),
+        ]
+        missing = [k for k, v in pairs if not v]
         if missing:
-            print(f"Missing required Server/DC params: {', '.join(missing)}", file=sys.stderr)
+            print(f"Missing required Server/DC params: {', '.join(missing)} (use flags/env/auth.ini)", file=sys.stderr)
             return 2
-        verify_ssl = args.verify_ssl.lower() == "true"
-        client = BitbucketServerClient(base_url=args.base_url, username=args.username, password=args.password, verify_ssl=verify_ssl)
-        runner.run_server(client, project_keys=args.project_keys)
+        client = BitbucketServerClient(base_url=base_url, username=username, password=password, verify_ssl=verify_ssl)
+        runner.run_server(client, project_keys=project_keys)
+
 
     # Relationships and graph common write
     runner.write_relationships()

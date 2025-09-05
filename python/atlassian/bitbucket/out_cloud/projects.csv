@@ -1,0 +1,9 @@
+workspace,project_key,project_name,project_uuid
+solutionsmetrixcrmdev,TC,TransUnion Connector,{df0f0a72-d512-46e8-b743-87497d209de1}
+solutionsmetrixcrmdev,JHFCU,JHFCU,{255ea280-5880-4ee4-904a-4cb75573c97e}
+solutionsmetrixcrmdev,USCCB,USCCB,{39df0fae-f495-4049-a00e-b937941a800a}
+solutionsmetrixcrmdev,CP,Creatio products,{a7da3e3d-525c-4456-89cf-db62910ad177}
+solutionsmetrixcrmdev,esl,ESL,{065f687a-ca44-4492-883e-35237ca715da}
+solutionsmetrixcrmdev,DYN,Dynamics,{3510f688-5102-45ee-be43-a7882ddc0a9f}
+solutionsmetrixcrmdev,SFDC,sfdc,{b396ecdc-8bf6-4057-ab07-bd4adac234c2}
+solutionsmetrixcrmdev,DEVOPS,DevOps,{ceb2a29d-c48e-458f-93b0-27f775dfcb92}
