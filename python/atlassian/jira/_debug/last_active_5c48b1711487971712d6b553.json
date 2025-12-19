@@ -1,0 +1,41 @@
+{
+  "links": {
+    "next": null
+  },
+  "data": {
+    "product_access": [
+      {
+        "key": "compass",
+        "id": "ari:cloud:compass::site/75c0b372-5bb2-4d1e-911d-b2b0c5753393",
+        "last_active": "2025-10-31",
+        "last_active_timestamp": "2025-10-31T19:19:27.198908712Z"
+      },
+      {
+        "key": "jira-core",
+        "id": "ari:cloud:jira-core::site/75c0b372-5bb2-4d1e-911d-b2b0c5753393",
+        "last_active": "2025-10-31",
+        "last_active_timestamp": "2025-10-31T16:41:09.491939779Z"
+      },
+      {
+        "key": "jira-product-discovery",
+        "id": "ari:cloud:jira-product-discovery::site/75c0b372-5bb2-4d1e-911d-b2b0c5753393",
+        "last_active": "2025-04-30",
+        "last_active_timestamp": "2025-04-30T05:45:28.440229538Z"
+      },
+      {
+        "key": "jira-servicedesk",
+        "id": "ari:cloud:jira-servicedesk::site/75c0b372-5bb2-4d1e-911d-b2b0c5753393",
+        "last_active": "2025-10-31",
+        "last_active_timestamp": "2025-10-31T20:16:53.785899057Z"
+      },
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/75c0b372-5bb2-4d1e-911d-b2b0c5753393",
+        "last_active": "2025-10-31",
+        "last_active_timestamp": "2025-10-31T16:41:09.491939779Z"
+      }
+    ],
+    "added_to_org": "2025-04-29",
+    "added_to_org_timestamp": "2025-04-29T22:14:30.234696Z"
+  }
+}

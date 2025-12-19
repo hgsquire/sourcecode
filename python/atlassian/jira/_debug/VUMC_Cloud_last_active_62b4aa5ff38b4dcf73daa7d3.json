@@ -1,0 +1,23 @@
+{
+  "links": {
+    "next": null
+  },
+  "data": {
+    "product_access": [
+      {
+        "key": "jira-core",
+        "id": "ari:cloud:jira-core::site/1ad9363b-37ca-4ee6-8500-cd10ffd87a00",
+        "last_active": "2025-08-28",
+        "last_active_timestamp": "2025-08-28T16:31:34.642881571Z"
+      },
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/1ad9363b-37ca-4ee6-8500-cd10ffd87a00",
+        "last_active": "2025-10-01",
+        "last_active_timestamp": "2025-10-01T17:16:46.493288778Z"
+      }
+    ],
+    "added_to_org": "2024-12-02",
+    "added_to_org_timestamp": "2024-12-02T17:35:36.184959Z"
+  }
+}

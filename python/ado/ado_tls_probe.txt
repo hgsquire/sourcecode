@@ -1,0 +1,174 @@
+$org  = "ESLFederalCreditUnion"
+$pat  = "40WV0le3k0b4P3GtWgyBkXTGY6mrOzX78y86PfU2S2rc9GYhoPFCJQQJ99BJACAAAAAnrkzhAAASAZDO18gY"
+$pair = ":" + $pat
+$basic = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($pair))
+$hdrs  = @{ Authorization = "Basic $basic" }
+
+# Force TLS 1.2 and HTTP/1.1 (avoids some middleboxes that dislike HTTP/2)
+Invoke-RestMethod -Uri "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7" `
+  -Headers $hdrs -Method Get -SslProtocol Tls12 -HttpVersion 1.1
+
+# Legacy endpoint test
+Invoke-RestMethod -Uri "https://$org.visualstudio.com/_apis/projects?api-version=7.1-preview.7" `
+  -Headers $hdrs -Method Get -SslProtocol Tls12 -HttpVersion 1.1
+
+# (TEMP check) If both still fail, try bypassing cert validation just to confirm SSL inspection:
+# Remove this once confirmed; install your corporate root CA instead.
+Invoke-RestMethod -Uri "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7" `
+  -Headers $hdrs -Method Get -SslProtocol Tls12 -HttpVersion 1.1 -SkipCertificateCheck
+  
+  
+  
+  
+$org="ESLFederalCreditUnion"; $pat="40WV0le3k0b4P3GtWgyBkXTGY6mrOzX78y86PfU2S2rc9GYhoPFCJQQJ99BJACAAAAAnrkzhAAASAZDO18gY"
+$basic=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":"+$pat))
+$hdrs=@{ Authorization = "Basic $basic" }
+
+Invoke-RestMethod -Uri "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7" -Headers $hdrs
+
+$org="ESLFederalCreditUnion"; $pat="40WV0le3k0b4P3GtWgyBkXTGY6mrOzX78y86PfU2S2rc9GYhoPFCJQQJ99BJACAAAAAnrkzhAAASAZDO18gY"
+$basic=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":"+$pat))
+
+# verbose, force HTTP/1.1
+curl.exe -v --http1.1 -H "Authorization: Basic $basic" "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7"
+
+# try IPv4 specifically
+curl.exe -v --ipv4 -H "Authorization: Basic $basic" "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7"
+
+# try TLS 1.3 explicitly
+curl.exe -v --tlsv1.3 -H "Authorization: Basic $basic" "https://dev.azure.com/$org/_apis/projects?api-version=7.1-preview.7"
+
+
+
+$org="ESLFederalCreditUnion"; $pat="40WV0le3k0b4P3GtWgyBkXTGY6mrOzX78y86PfU2S2rc9GYhoPFCJQQJ99BJACAAAAAnrkzhAAASAZDO18gY"
+$basic=[Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":"+$pat))
+$hdrs=@{ Authorization = "Basic $basic" }
+
+# 7.2 preview
+Invoke-RestMethod -Uri "https://dev.azure.com/$org/_apis/projects?api-version=7.2-preview.4" -Headers $hdrs
+
+# or 7.0 stable
+Invoke-RestMethod -Uri "https://dev.azure.com/$org/_apis/projects?api-version=7.0" -Headers $hdrs
+
+
+
+# Build Basic header: base64("username:token")
+$u   = "chrismorgan3"
+$tok = "ATATT3xFfGF0kADZFYIagqbpGWZ5QsEHIQ3raq8gKUi9CPgH02whPtw8JBnCShas_jLB74TMv7rUu3EcBazTe4WRO3f_Nuyj-q3oDng6ygMrdQkd-ADvVxFcy3ZPMvJsoxdCnLmWWnQ6cx6XCNYoxKUOnSwmrlAD0NzIpE1aFG5aKdhTmdhwFJw=B6F591CE"
+$basic = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$u`:$tok"))
+
+
+# Ask remote for refs (no secrets printed; command echoes are safe here)
+git -c "http.extraHeader=Authorization: Basic $basic" ls-remote https://bitbucket.org/solutionsmetrixcrmdev/esl.git
+
+# Step 1: (Optional, but strongly recommended for first run)
+$env:GIT_HTTP_VERSION = "HTTP/1.1"
+
+# Step 2: Run the migration script
+python "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migrate_esl_bitbucket_to_ado.py" --config "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migration_config.ini" --ado-project "HubTestProject" --bb-workspace "solutionsmetrixcrmdev" --bb-username "chris.morgan@software-development-experts.com" --bb-git-username "chrismorgan3" --bb-password "ATATT3xFfGF0kADZFYIagqbpGWZ5QsEHIQ3raq8gKUi9CPgH02whPtw8JBnCShas_jLB74TMv7rUu3EcBazTe4WRO3f_Nuyj-q3oDng6ygMrdQkd-ADvVxFcy3ZPMvJsoxdCnLmWWnQ6cx6XCNYoxKUOnSwmrlAD0NzIpE1aFG5aKdhTmdhwFJw=B6F591CE" --convert-bb-yaml --force-ipv4 --git-exe "C:\Program Files\Git\cmd\git.exe"
+
+----ADO PAT Test
+
+# === Fill these in ===
+$org = "ESLFederalCreditUnion"
+$pat = "7T6ViVd8GGt1TBB2G9yi6nayblcJuwevOL6BlyswBSdHyUqoEexnJQQJ99BJACAAAAAnrkzhAAASAZDO1kSC"
+
+# === Build auth header ===
+$pair  = ":" + $pat
+$basic = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($pair))
+$hdrs  = @{ Authorization = "Basic $basic" }
+
+# === 1️⃣ Call the token introspection endpoint ===
+# (this does not expose any secrets, it just checks scopes)
+$resp = Invoke-RestMethod `
+  -Uri "https://vssps.dev.azure.com/$org/_apis/tokens/pats?api-version=7.1-preview.1" `
+  -Headers $hdrs -Method GET
+
+# === 2️⃣ Show scopes nicely ===
+$resp | Select-Object -ExpandProperty value |
+  ForEach-Object {
+    Write-Host "Display Name:`t$($_.displayName)"
+    Write-Host "Valid To:`t$($_.validTo)"
+    Write-Host "Authorized Scopes:`t$($_.authorizationIdScopes -join ', ')"
+    Write-Host "------------------------------------------------------------"
+  }
+  
+  Test-AdoPatScopes -Organization "ESLFederalCreditUnion" -Pat "7T6ViVd8GGt1TBB2G9yi6nayblcJuwevOL6BlyswBSdHyUqoEexnJQQJ99BJACAAAAAnrkzhAAASAZDO1kSC"
+  
+  function Test-AdoPatScopes {
+    param(
+        [Parameter(Mandatory = $true)][string]$Organization,
+        [Parameter(Mandatory = $true)][string]$Pat
+    )
+
+    $headers = @{
+        Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$Pat"))
+        "Content-Type" = "application/json"
+    }
+
+    Write-Host "`n🔍 Testing ADO PAT scopes for organization: $Organization`n"
+
+    $tests = @(
+        @{ Name = "Code Read/Write"; Url = "https://dev.azure.com/$Organization/_apis/git/repositories?api-version=7.0" },
+        @{ Name = "Project & Team Read"; Url = "https://dev.azure.com/$Organization/_apis/projects?api-version=7.0" },
+        @{ Name = "Build Read/Execute"; Url = "https://dev.azure.com/$Organization/_apis/build/definitions?api-version=7.0" }
+    )
+
+    foreach ($t in $tests) {
+        Write-Host "➡️  Testing $($t.Name)..."
+        try {
+            $resp = Invoke-RestMethod -Uri $t.Url -Headers $headers -Method GET -ErrorAction Stop
+            if ($resp.count -ge 0 -or $resp.value) {
+                Write-Host "✅ $($t.Name): PASS`n" -ForegroundColor Green
+            }
+            else {
+                Write-Host "⚠️  $($t.Name): Unexpected response`n" -ForegroundColor Yellow
+            }
+        }
+        catch {
+            Write-Host "❌ $($t.Name): FAIL`n$($_.Exception.Message)`n" -ForegroundColor Red
+        }
+    }
+}
+
+
+
+python migrate_esl_bitbucket_to_ado.py --config "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migration_config.ini" --ado-project "HubTestProject" --bb-workspace "solutionsmetrixcrmdev" --bb-username "chris.morgan@software-development-experts.com" --bb-git-username "chrismorgan3" --bb-password "ATATT3xFfGF0kADZFYIagqbpGWZ5QsEHIQ3raq8gKUi9CPgH02whPtw8JBnCShas_jLB74TMv7rUu3EcBazTe4WRO3f_Nuyj-q3oDng6ygMrdQkd-ADvVxFcy3ZPMvJsoxdCnLmWWnQ6cx6XCNYoxKUOnSwmrlAD0NzIpE1aFG5aKdhTmdhwFJw=B6F591CE" --convert-bb-yaml --force-ipv4
+
+
+python "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migrate_esl_bitbucket_to_ado.py" `
+  --config "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migration_config.ini" `
+  --ado-project "HubTestProject" `
+  --bb-workspace "solutionsmetrixcrmdev" `
+  --bb-username "chris.morgan@software-development-experts.com" `
+  --bb-git-username "chrismorgan3" `
+  --bb-password "ATATT3xFfGF0kADZFYIagqbpGWZ5QsEHIQ3raq8gKUi9CPgH02whPtw8JBnCShas_jLB74TMv7rUu3EcBazTe4WRO3f_Nuyj-q3oDng6ygMrdQkd-ADvVxFcy3ZPMvJsoxdCnLmWWnQ6cx6XCNYoxKUOnSwmrlAD0NzIpE1aFG5aKdhTmdhwFJw=B6F591CE" `
+  --convert-bb-yaml `
+  --force-ipv4 `
+  --git-exe "C:\Program Files\Git\cmd\git.exe" `
+  --work-dir $work
+  
+  python migrate_esl_bitbucket_to_ado.py `
+  --config "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migration_config.ini" `
+  --ado-project "HubTestProject" `
+  --bb-workspace "solutionsmetrixcrmdev" `
+  --bb-username "chris.morgan@software-development-experts.com" `
+  --bb-git-username "chrismorgan3" `
+  --bb-password "7T6ViVd8GGt1TBB2G9yi6nayblcJuwevOL6BlyswBSdHyUqoEexnJQQJ99BJACAAAAAnrkzhAAASAZDO1kSC" `
+  --convert-bb-yaml `
+  --force-ipv4 `
+  --git-exe "C:\Program Files\Git\cmd\git.exe" `
+  --git-diagnostics
+  
+  python migrate_esl_bitbucket_to_ado.py `
+  --config "E:\Dev\GitHub\Workspaces\cmorgan\sourcecode\python\ado\migration_config.ini" `
+  --ado-project "HubTestProject" `
+  --bb-workspace "solutionsmetrixcrmdev" `
+  --bb-username "chrismorgan3" `
+  --bb-git-username "chrismorgan3" `
+  --bb-password "ATATT3xFfGF0WLUkY9bCMfApI4iGt2o0WtkAMxNaJuV79L_DHFBECr1XhQM5VLuX2rFsIj_aHrt8klWWqOnew9niiS74lg3o8irc0uW8TH4TFBXDmwXDYEY8tNZ1v7QaOhRu23-lht6VL5jjiIH5eot5s8qwAfY2trhnHHS3YsEbD6Y75xYc8mY=5DA10122" `
+  --convert-bb-yaml `
+  --force-ipv4 `
+  --git-exe "C:\Program Files\Git\cmd\git.exe" `
+  --git-diagnostics `
+  --ado-pat "7T6ViVd8GGt1TBB2G9yi6nayblcJuwevOL6BlyswBSdHyUqoEexnJQQJ99BJACAAAAAnrkzhAAASAZDO1kSC"

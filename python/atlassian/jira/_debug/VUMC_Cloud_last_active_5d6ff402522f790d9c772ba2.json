@@ -1,0 +1,17 @@
+{
+  "links": {
+    "next": null
+  },
+  "data": {
+    "product_access": [
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/b2e78bc5-1b15-43ee-b81b-5509495dd05c",
+        "last_active": "2025-10-31",
+        "last_active_timestamp": "2025-10-31T19:43:24.485611138Z"
+      }
+    ],
+    "added_to_org": "2025-03-13",
+    "added_to_org_timestamp": "2025-03-13T14:10:47.360365Z"
+  }
+}

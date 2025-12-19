@@ -1,5 +1,3 @@
 workspace,project_key,repo_slug,repo_name,repo_uuid,is_private,default_branch
-solutionsmetrixcrmdev,TC,tuconnector,TUConnector,{63393c2f-c1d5-4143-839c-52c66921b08e},False,main
-solutionsmetrixcrmdev,JHFCU,jhfcu,JHFCU,{1cf324ab-2dc1-4284-b761-f6f28daff0ff},False,main
 solutionsmetrixcrmdev,CP,creatiotools,CreatioTools,{a2424de8-b69a-4b43-9fb6-c743b8336d7a},True,main
 solutionsmetrixcrmdev,esl,esl,ESL,{cf5d7c52-effe-4bb9-9c95-255509400806},True,master

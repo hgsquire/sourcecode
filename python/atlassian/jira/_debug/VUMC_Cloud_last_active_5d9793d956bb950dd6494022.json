@@ -1,0 +1,41 @@
+{
+  "links": {
+    "next": null
+  },
+  "data": {
+    "product_access": [
+      {
+        "key": "confluence",
+        "id": "ari:cloud:confluence::site/7b746333-7659-4488-8620-427c68db9454",
+        "last_active": "2025-11-03",
+        "last_active_timestamp": "2025-11-03T15:35:58.542224185Z"
+      },
+      {
+        "key": "jira-core",
+        "id": "ari:cloud:jira-core::site/23e0bc1d-e27d-4405-85db-5c93665099c9",
+        "last_active": "2025-11-04",
+        "last_active_timestamp": "2025-11-04T17:56:20.658156331Z"
+      },
+      {
+        "key": "jira-core",
+        "id": "ari:cloud:jira-core::site/d542ea14-e0cd-4f3f-80ff-d8b7ad957ea3",
+        "last_active": "2025-05-01",
+        "last_active_timestamp": "2025-05-01T15:32:27.731436873Z"
+      },
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/23e0bc1d-e27d-4405-85db-5c93665099c9",
+        "last_active": "2025-11-04",
+        "last_active_timestamp": "2025-11-04T17:56:54.591368289Z"
+      },
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/d542ea14-e0cd-4f3f-80ff-d8b7ad957ea3",
+        "last_active": "2025-05-01",
+        "last_active_timestamp": "2025-05-01T15:32:27.731436873Z"
+      }
+    ],
+    "added_to_org": "2025-01-22",
+    "added_to_org_timestamp": "2025-01-22T23:19:11.106321Z"
+  }
+}

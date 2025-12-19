@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "accountId": "5c48b1711487971712d6b553",
+      "accountType": "atlassian",
+      "status": "active",
+      "accountStatus": "active",
+      "membershipStatus": "active",
+      "addedToOrg": "2025-04-29T22:14:30.234696Z",
+      "name": "Carson Holmes",
+      "nickname": "Carson Holmes",
+      "email": "carson@software-development-experts.com",
+      "emailVerified": true,
+      "claimStatus": "unmanaged",
+      "platformRoles": [
+        "atlassian/org-admin",
+        "atlassian/site-admin"
+      ],
+      "roleAssignmentMethods": [],
+      "picture": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c48b1711487971712d6b553/435a8826-2a82-4844-a57f-a6775366d83a/128",
+      "avatar": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5c48b1711487971712d6b553/435a8826-2a82-4844-a57f-a6775366d83a/128",
+      "counts": {
+        "resources": 8
+      },
+      "links": {
+        "self": null
+      }
+    },
+    {
+      "accountId": "70121:ffa632e0-e179-488c-b72e-3ac3a8c47f10",
+      "accountType": "atlassian",
+      "status": "active",
+      "accountStatus": "active",
+      "membershipStatus": "active",
+      "addedToOrg": "2025-11-04T14:30:18.626927Z",
+      "name": "Chris Morgan",
+      "nickname": "Chris Morgan",
+      "email": "chrismorgan3@msn.com",
+      "emailVerified": true,
+      "claimStatus": "unmanaged",
+      "platformRoles": [],
+      "roleAssignmentMethods": [],
+      "picture": "https://secure.gravatar.com/avatar/99f4c7da4054268782760096916c0941?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCM-3.png",
+      "avatar": "https://secure.gravatar.com/avatar/99f4c7da4054268782760096916c0941?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCM-3.png",
+      "counts": {
+        "resources": 7
+      },
+      "links": {
+        "self": null
+      }
+    },
+    {
+      "accountId": "712020:ec686db4-4dfc-4932-af09-e3db63ae732c",
+      "accountType": "atlassian",
+      "status": "active",
+      "accountStatus": "active",
+      "membershipStatus": "active",
+      "addedToOrg": "2025-05-01T00:18:41.997191Z",
+      "name": "Chris Morgan",
+      "nickname": "Chris Morgan",
+      "email": "chris.morgan@software-development-experts.com",
+      "emailVerified": true,
+      "claimStatus": "unmanaged",
+      "platformRoles": [
+        "atlassian/org-admin",
+        "atlassian/user-access-admin",
+        "atlassian/site-admin"
+      ],
+      "roleAssignmentMethods": [],
+      "picture": "https://secure.gravatar.com/avatar/70e743a6bcffad147491cee004c1366c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCM-6.png",
+      "avatar": "https://secure.gravatar.com/avatar/70e743a6bcffad147491cee004c1366c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCM-6.png",
+      "counts": {
+        "resources": 7
+      },
+      "links": {
+        "self": null
+      }
+    },
+    {
+      "accountId": "5a3168fc1a6e513a31858d77",
+      "accountType": "atlassian",
+      "status": "active",
+      "accountStatus": "active",
+      "membershipStatus": "active",
+      "addedToOrg": "2025-10-16T18:39:03.410174Z",
+      "name": "Mark Kennaley",
+      "nickname": "Mark Kennaley",
+      "email": "mark@software-development-experts.com",
+      "emailVerified": true,
+      "claimStatus": "unmanaged",
+      "platformRoles": [
+        "atlassian/org-admin",
+        "atlassian/user-access-admin",
+        "atlassian/site-admin"
+      ],
+      "roleAssignmentMethods": [],
+      "picture": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5a3168fc1a6e513a31858d77/530a3593-06c9-443a-9845-cc5eb1888fac/128",
+      "avatar": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5a3168fc1a6e513a31858d77/530a3593-06c9-443a-9845-cc5eb1888fac/128",
+      "counts": {
+        "resources": 7
+      },
+      "links": {
+        "self": null
+      }
+    }
+  ],
+  "links": {
+    "next": null,
+    "prev": null,
+    "self": "eyJsaW1pdCI6MTAwLCJzb3J0QnkiOm51bGwsImFjY291bnRJZHMiOm51bGwsImRpcmVjdG9yeUlkcyI6WyJhMTk4YmYzYy0wY2UyLTQyYzUtYWI1YS0xZThjYThkNGFkOGMiXSwiZ3JvdXBJZHMiOm51bGwsInJvbGVJZHMiOm51bGwsInJlc291cmNlSWRzIjpudWxsLCJzZWFyY2hUZXJtIjpudWxsLCJjbGFpbVN0YXR1cyI6bnVsbCwibWFuYWdlbWVudFNvdXJjZSI6bnVsbCwiZW1haWxWZXJpZmllZCI6bnVsbCwibWZhRW5hYmxlZCI6bnVsbCwiZm9yRGVsZXRpb24iOm51bGwsImFjY291bnRTdGF0dXMiOm51bGwsIm1lbWJlcnNoaXBTdGF0dXMiOm51bGwsInN0YXR1cyI6bnVsbCwiZW1haWxEb21haW5zIjpudWxsLCJyb2xlQXNzaWdubWVudE1ldGhvZCI6bnVsbCwiZXhwYW5kIjpudWxsLCJsYXN0Q3Vyc29yVmFsdWUiOm51bGwsImxhc3RBY2NvdW50QXJpIjpudWxsLCJjdXJzb3JEaXJlY3Rpb24iOm51bGx9"
+  }
+}

@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://bitbucket.org/solutionsmetrixcrmdev/esl.git
+	tagOpt = --no-tags
+	fetch = +refs/*:refs/*
+	mirror = true
+[http]
+	sslBackend = schannel
+	version = HTTP/1.1

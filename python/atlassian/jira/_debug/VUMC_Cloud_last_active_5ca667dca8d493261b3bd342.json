@@ -1,0 +1,23 @@
+{
+  "links": {
+    "next": null
+  },
+  "data": {
+    "product_access": [
+      {
+        "key": "confluence",
+        "id": "ari:cloud:confluence::site/7b746333-7659-4488-8620-427c68db9454",
+        "last_active": "2025-11-01",
+        "last_active_timestamp": "2025-11-01T12:08:47.438890829Z"
+      },
+      {
+        "key": "jira-software",
+        "id": "ari:cloud:jira-software::site/23e0bc1d-e27d-4405-85db-5c93665099c9",
+        "last_active": "2025-11-04",
+        "last_active_timestamp": "2025-11-04T17:03:13.854680969Z"
+      }
+    ],
+    "added_to_org": "2025-01-22",
+    "added_to_org_timestamp": "2025-01-22T23:18:52.262704Z"
+  }
+}
