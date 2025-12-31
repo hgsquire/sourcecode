@@ -1,0 +1,680 @@
+VUMC ID Email,TLA Email,pageTitle
+aaron.d.voelker@vumc.org,adv@vumc.org,SOC-KB0014 - IRS: Monthly IRS Metrics
+aaron.d.voelker@vumc.org,adv@vumc.org,VEC NIS Knowledge Base
+aaron.d.voelker@vumc.org,adv@vumc.org,VEC Network Infrastructure Security
+aaron.d.voelker@vumc.org,adv@vumc.org,VEC Security Operations & Access Control
+aaron.d.voelker@vumc.org,adv@vumc.org,VEC Threat Detection and Response
+aaron.d.voelker@vumc.org,adv@vumc.org,
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0002 - VEC CIS Github Access
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0003 - How to configure an NSG in Azure Portal
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0004 - Enable Flow Logs in Azure Portal
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0005 - Enable Flow Logs in AWS Console for Prisma Cloud Threat Detection
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0006 - Prisma Cloud Azure Subscription Onboarding
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0007 - Prisma Cloud Azure Tenant Onboarding
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0008 - Creating a host auto-defend policy for defender deployment in Prisma Cloud console
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0009 - Deploy Taegis XDR to AWS
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0011 - IADS Entra Role Request Template for Global Admin Permissions
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0012 - ECS Azure RBAC Role Request Template
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0012 - LOCE Daily System Status Checks
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0012 - System Status Daily Checklist
+alexander.trujillo@vumc.org,ajt1@vumc.org,CIS-KB0013 - Cortex Cloud Azure Onboarding Workaround
+alexander.trujillo@vumc.org,ajt1@vumc.org,VEC CIS Knowledge Base
+alexander.trujillo@vumc.org,ajt1@vumc.org,VEC Cloud Infrastructure Security
+alexander.trujillo@vumc.org,ajt1@vumc.org,VEC NIS Knowledge Base
+alexander.trujillo@vumc.org,ajt1@vumc.org,VEC Network Infrastructure Security
+alexander.trujillo@vumc.org,ajt1@vumc.org,
+amanda.priddy@vumc.org,pa.admin@vumc.org,VEC Active Vulnerability Assessment
+amanda.priddy@vumc.org,pa.admin@vumc.org,VEC Network Infrastructure Security
+amanda.priddy@vumc.org,pa.admin@vumc.org,
+andrew.kuipers@vumc.org,kad.admin@vumc.org,AVA-KB0012 - Alert Suppression Rules and Dynamic Tagging in Zingbox
+andrew.kuipers@vumc.org,kad.admin@vumc.org,CVE Aggregation and Classification from CVEDetails
+andrew.kuipers@vumc.org,kad.admin@vumc.org,Tenable Vulnerabilities by Device Tracking
+andrew.kuipers@vumc.org,kad.admin@vumc.org,VEC Active Vulnerability Assessment
+andrew.kuipers@vumc.org,kad.admin@vumc.org,
+angella.king@vumc.org,adk@vumc.org,SOC- KB0027 - AS: Application Access - Security Manager
+angella.king@vumc.org,adk@vumc.org,SOC-KB0023 - AS: Application Access - Omnicell
+angella.king@vumc.org,adk@vumc.org,SOC-KB0032 AS: MS MFA (Microsoft MFA)
+angella.king@vumc.org,adk@vumc.org,SOC-KB0034 - AS: On-Call Tips and Tricks (Troubleshooting Methods)
+angella.king@vumc.org,adk@vumc.org,SOC-KB0039 - AS: Application Access - Safenet Mobilepass for TLA
+angella.king@vumc.org,adk@vumc.org,VEC Active Vulnerability Assessment
+angella.king@vumc.org,adk@vumc.org,VEC Security Operations & Access Control
+angella.king@vumc.org,adk@vumc.org,VEC_SOS_AVA_SRR - Blank Copy
+angella.king@vumc.org,adk@vumc.org,
+brian.luing@vumc.org,lb.admin@vumc.org,NSO-KB0224 - Remote Radiology Configuration on PA-460
+brian.luing@vumc.org,lb.admin@vumc.org,NSO-KB0228 - Capture PAN Packet Buffer Protection Offending Session
+brian.luing@vumc.org,lb.admin@vumc.org,NSO-KB0230 - Custom App-ID for OpenShift
+brian.luing@vumc.org,lb.admin@vumc.org,VEC CIS Knowledge Base
+brian.luing@vumc.org,lb.admin@vumc.org,VEC Cloud Infrastructure Security
+brian.luing@vumc.org,lb.admin@vumc.org,VEC NIS Knowledge Base
+brian.luing@vumc.org,lb.admin@vumc.org,VEC NIS Policies and Procedures
+brian.luing@vumc.org,lb.admin@vumc.org,VEC Network Infrastructure Security
+brian.luing@vumc.org,lb.admin@vumc.org,
+cesar.sanchez@vumc.org,scm.admin@vumc.org,VEC Active Vulnerability Assessment
+cesar.sanchez@vumc.org,scm.admin@vumc.org,VEC NIS Knowledge Base
+cesar.sanchez@vumc.org,scm.admin@vumc.org,VEC Network Infrastructure Security
+cesar.sanchez@vumc.org,scm.admin@vumc.org,VEC Security Operations & Access Control
+cesar.sanchez@vumc.org,scm.admin@vumc.org,VEC Threat Detection and Response
+cesar.sanchez@vumc.org,scm.admin@vumc.org,
+charles.easter@vumc.org,cme2@vumc.org,VEC Active Vulnerability Assessment
+charles.easter@vumc.org,cme2@vumc.org,VEC Network Infrastructure Security
+charles.easter@vumc.org,cme2@vumc.org,VEC Security Operations & Access Control
+charles.easter@vumc.org,cme2@vumc.org,VEC Threat Detection and Response
+charles.easter@vumc.org,cme2@vumc.org,
+daniel.loughney@vumc.org,ld.admin@vumc.org,VEC NIS Knowledge Base
+daniel.loughney@vumc.org,ld.admin@vumc.org,VEC Network Infrastructure Security
+daniel.loughney@vumc.org,ld.admin@vumc.org,VEC Threat Detection and Response
+dustin.vogler@vumc.org,vdr.admin@vumc.org,VEC Active Vulnerability Assessment
+dustin.vogler@vumc.org,vdr.admin@vumc.org,VEC NIS Knowledge Base
+dustin.vogler@vumc.org,vdr.admin@vumc.org,VEC Network Infrastructure Security
+dustin.vogler@vumc.org,vdr.admin@vumc.org,VEC Security Operations & Access Control
+dustin.vogler@vumc.org,vdr.admin@vumc.org,VEC Threat Detection and Response
+dustin.vogler@vumc.org,vdr.admin@vumc.org,
+edward.j.carter@vumc.org,ejc@vumc.org,VEC NIS Knowledge Base
+edward.j.carter@vumc.org,ejc@vumc.org,VEC Network Infrastructure Security
+edward.j.carter@vumc.org,ejc@vumc.org,
+edward.wright@vumc.org,wer.admin@vumc.org,CIS-KB0010 - Deploy an IPsec Tunnel between Azure and VUMC
+edward.wright@vumc.org,wer.admin@vumc.org,CIS-KB0012 - System Status Daily Checklist
+edward.wright@vumc.org,wer.admin@vumc.org,VEC CIS Knowledge Base
+edward.wright@vumc.org,wer.admin@vumc.org,VEC Cloud Infrastructure Security
+edward.wright@vumc.org,wer.admin@vumc.org,VEC NIS Knowledge Base
+edward.wright@vumc.org,wer.admin@vumc.org,VEC Network Infrastructure Security
+edward.wright@vumc.org,wer.admin@vumc.org,
+elijahpharaoh.carter@vumc.org,epc1@vumc.org,VEC Active Vulnerability Assessment
+elijahpharaoh.carter@vumc.org,epc1@vumc.org,
+erik.tomlinson@vumc.org,ewt@vumc.org,CIS-KB0001 - Prisma Cloud Portal Access
+erik.tomlinson@vumc.org,ewt@vumc.org,LDR-KB-0001: International Travel Authorization
+erik.tomlinson@vumc.org,ewt@vumc.org,LDR-KB-0002: Performance Improvement Plan
+erik.tomlinson@vumc.org,ewt@vumc.org,LDR-KB-0003: Performance Improvement Plan-Annual Review Guidance
+erik.tomlinson@vumc.org,ewt@vumc.org,LDR-KB-0004: IT Market Job Descriptions and Template
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0001 - Check Point MDS/SMS is status “Stopped” and will not start
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0015 - RADIUS Authentication Setup
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0063 - Emergency Change Procedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0069 - Check Point Web Visualization Tool
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0070 - Trap ESM Deployment
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0071 - User-ID Monitoring
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0074 - VUMC APIC Access
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0076 - Migration of objects and policies from Checkpoint MDS to SMS
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0078 - Surplus Equipment Off-Site
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0080 - Naming Convention Standard for Policies
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0081 - Checkpoint Restart First Time Configuration Manager / Change from SMS to GW
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0082 - F5 LTM VUMC Clusters
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0083 - VUMC Checkpoint SMS and Logging Environment
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0084 - Extending/Adding drive space to Checkpoint VM
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0086 - IP Management Access
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0091 - Nexum TAC Contact Procedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0093 - Palo Alto Migration from Single-VSYS to Multi-VSYS
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0096 - VM Conversion of vmdk to OVF and OVA for ESX
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0097 - Check Point firewall cluster upgrade to R80.10
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0100 - Notepad++ Tips and Tricks
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0102 - Symantec SA NetApp Commands
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0103 - F5 Data Collection Procedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0106 - VEC Quarantine EDL
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0107 - Number of hints on disk has exceeded 5000 due to log forward failures
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0108 - Palo Alto Devices no longer logging to Cortex Data Lake
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0112 - PAN User-ID Flow and Troubleshooting
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0113 - Major Incident Command List
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0116 - VEC SEO Infrastructure Backup and Retention
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0121 - Administering LiveAction
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0124 - F5 Edge Client Upgrade
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0126 - Palo Alto Cortex XDR Agent Uninstall
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0127 - Palo Alto Cortex XDR Agent Distribution
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0129 - Palo Alto PCAP for LACP traffic
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0132 - Active Directory Administrative Center ADAC Connection to DS.VUMC.IO for NON-Azure AD Accounts/Machines
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0135 - VUMC.IO / Azure AD User-ID Implementation
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0139 - Replacement of an SMC in 7000 Series Chassis
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0144 - Active Directory Administrative Center ADAC Connection to DS.VUMC.IO for Azure AD Accounts/Machines
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0146 - Cisco Firepower eStreamer Restart
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0147 - PowerShell Commands
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0148 - ThousandEyes
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0150 - Sensitivity Labels Client Issue Options
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0152 - VEC SOS Escalations
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0153 - VM Request Process
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0157 - Connect02.vumc.org User Restriction
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0158 - F5 UCS Archive and Policy Export
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0159 - SecureCRT looping script for CLI trouble-shooting
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0160 - Policy Audit/Maintenance Procedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0161 - VEC SEO Environment Classifications
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0166 - Palo Alto Flow_Basic Procedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0167 - Sensitivity Label Changes (Azure / Compliance Portal)
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0171 - Active Directory Users and Computers Connection to DS.VANDERBILT.EDU for Azure AD Accounts/Machines
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0173 - Imperva DDoS Service
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0174 - DDoS Event Response Proceedure
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0176 - F5 AWAF Policy Build Process
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0177 - VDI/RDSH Topology
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0183 – Approved Optics/Legrand RMA Process
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0186 - F5 Adding Site to the Clientless Portal Access / Webtop
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0187 - RMA Palo Alto Networks
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0191 - ACCRE IP Range
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0192 - F5 Internal Architecture
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0195 - Public F5 VIP DoS Protection
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0196 - Working Abroad
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0201 - Factory Default and Restore of a Palo Alto NGFW
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0208 - VUMC Speedtest Servers
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0209 - Netscout / Arbor Networks DDoS Service Activiation
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0211 - Prisma Access Routes
+erik.tomlinson@vumc.org,ewt@vumc.org,NSO-KB0226 - Remote Radiology RMA Process
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0001: VEC NIS Lead On-Call (LOCE) and Operations and Escalation Engineer (OEE) Policy
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0002:  VUMC IT Network Security Cross Train Strategy
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0003: VEC SEO Change Implementation (Under Construction)
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0005: VEC SEO Tickets
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0007: VEC SEO/SOC Restricted Policy Push Commit Policy
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0008: VEC SEO/SOC RO Access Logs
+erik.tomlinson@vumc.org,ewt@vumc.org,Policy 0009: VEC SEC/SOC Rule Request Policy
+erik.tomlinson@vumc.org,ewt@vumc.org,TS001 - CS-MCE Firewall Services
+erik.tomlinson@vumc.org,ewt@vumc.org,TS003 - DC-DC3 Firewall Cluster
+erik.tomlinson@vumc.org,ewt@vumc.org,TS015 - Dist-VTH Firewall Cluster (Decommissioned)
+erik.tomlinson@vumc.org,ewt@vumc.org,TS993 - DC-DC3 Firewall Cluster Bundle
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Active Vulnerability Assessment
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC CIS Knowledge Base
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC CIS Policies and Procedures
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Cloud Infrastructure Security
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Leaders Knowledge Base
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC NIS Archive
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC NIS Disaster Recovery
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC NIS Knowledge Base
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC NIS Policies and Procedures
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC NIS Technical Summary
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Network Infrastructure Security
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC SOS Leaders Page
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Security Operations & Access Control
+erik.tomlinson@vumc.org,ewt@vumc.org,VEC Threat Detection and Response
+erik.tomlinson@vumc.org,ewt@vumc.org,VUMC DC Class Firewall DR
+erik.tomlinson@vumc.org,ewt@vumc.org,VUMC Enterprise CyberSecurity - Security Operations and Services
+erik.tomlinson@vumc.org,ewt@vumc.org,
+gourija.s.menon@vumc.org,gsm@vumc.org,
+ikem.haffner@vumc.org,hi.admin@vumc.org,VEC CIS Knowledge Base
+ikem.haffner@vumc.org,hi.admin@vumc.org,VEC Cloud Infrastructure Security
+ikem.haffner@vumc.org,hi.admin@vumc.org,VEC NIS Knowledge Base
+ikem.haffner@vumc.org,hi.admin@vumc.org,VEC Network Infrastructure Security
+ikem.haffner@vumc.org,hi.admin@vumc.org,
+jason.a.milliken@vumc.org,ma.admin@vumc.org,
+jason.r.anderson@vumc.org,jra@vumc.org,Cortex XDR KBs
+jason.r.anderson@vumc.org,jra@vumc.org,SOC-KB0008 – PhishMe Simulation Stat Gathering and Reporting
+jason.r.anderson@vumc.org,jra@vumc.org,SOC-KB0013 - Phish Monitoring and Purge Process
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0001 - Phishing Attack Response
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0009 - Compromised Account Response
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0100 - Reviewing an Incident
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0101 - Reviewing Quarantine Detections
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0102 - Reviewing Alerts
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0103 - Reviewing Endpoints
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0104 - Adding a Hash to the Allow/Block Lists
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0105 - Creating an Exception
+jason.r.anderson@vumc.org,jra@vumc.org,TDR-KB0106 - Onboarding into XDR
+jason.r.anderson@vumc.org,jra@vumc.org,VEC Active Vulnerability Assessment
+jason.r.anderson@vumc.org,jra@vumc.org,VEC NIS Knowledge Base
+jason.r.anderson@vumc.org,jra@vumc.org,VEC Network Infrastructure Security
+jason.r.anderson@vumc.org,jra@vumc.org,VEC Security Operations & Access Control
+jason.r.anderson@vumc.org,jra@vumc.org,VEC Threat Detection and Response
+jason.r.anderson@vumc.org,jra@vumc.org,
+jd.artis@vumc.org,ajd.admin@vumc.org,Hello World!
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC -KB0015 - TIS: Monthly TIS Metrics
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC -KB0016 - EDS: Monthly EDS Metrics
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC -KB0017 - SEO Monthly Metrics
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0006 - Security ScoreCard Requests
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0007 – Detailed Phish Reporting Guide
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0009 - Sensitivity Label
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0011 - Business Continuity IAO
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0019 - AS: Application Access - Alaris Infusion
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0020 - AS: Application Access - IECG (SG-ISECG)
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0026 - AS: Application Access - PHG Armband
+jd.artis@vumc.org,ajd.admin@vumc.org,SOC-KB0032 AS: MS MFA (Microsoft MFA)
+jd.artis@vumc.org,ajd.admin@vumc.org,VEC Active Vulnerability Assessment
+jd.artis@vumc.org,ajd.admin@vumc.org,VEC Network Infrastructure Security
+jd.artis@vumc.org,ajd.admin@vumc.org,VEC Security Operations & Access Control
+jd.artis@vumc.org,ajd.admin@vumc.org,VEC Threat Detection and Response
+jd.artis@vumc.org,ajd.admin@vumc.org,
+joe.yates@vumc.org,yjj.admin@vumc.org,VEC Active Vulnerability Assessment
+joe.yates@vumc.org,yjj.admin@vumc.org,VEC NIS Knowledge Base
+joe.yates@vumc.org,yjj.admin@vumc.org,VEC Network Infrastructure Security
+joe.yates@vumc.org,yjj.admin@vumc.org,VEC Security Operations & Access Control
+joe.yates@vumc.org,yjj.admin@vumc.org,VEC Threat Detection and Response
+joe.yates@vumc.org,yjj.admin@vumc.org,
+josh.richardson@vumc.org,jlr@vumc.org,NSO-KB0071 - User-ID Monitoring
+josh.richardson@vumc.org,jlr@vumc.org,NSO-KB0085 - Check Point SNMP Custom Traps
+josh.richardson@vumc.org,jlr@vumc.org,NSO-KB0086 - IP Management Access
+josh.richardson@vumc.org,jlr@vumc.org,NSO-KB0094 - Check Point R80
+josh.richardson@vumc.org,jlr@vumc.org,VEC Active Vulnerability Assessment
+josh.richardson@vumc.org,jlr@vumc.org,VEC NIS Knowledge Base
+josh.richardson@vumc.org,jlr@vumc.org,VEC NIS Policies and Procedures
+josh.richardson@vumc.org,jlr@vumc.org,VEC Network Infrastructure Security
+josh.richardson@vumc.org,jlr@vumc.org,VEC Security Operations & Access Control
+josh.richardson@vumc.org,jlr@vumc.org,VEC Threat Detection and Response
+josh.richardson@vumc.org,jlr@vumc.org,
+joshua.lutz@vumc.org,jgl@vumc.org,TDR-KB0010 – eDiscovery Escalation Procedure
+joshua.lutz@vumc.org,jgl@vumc.org,VEC Active Vulnerability Assessment
+joshua.lutz@vumc.org,jgl@vumc.org,VEC NIS Knowledge Base
+joshua.lutz@vumc.org,jgl@vumc.org,VEC Network Infrastructure Security
+joshua.lutz@vumc.org,jgl@vumc.org,VEC Security Operations & Access Control
+joshua.lutz@vumc.org,jgl@vumc.org,VEC Threat Detection and Response
+joshua.lutz@vumc.org,jgl@vumc.org,
+kevin.e.hill@vumc.org,keh@vumc.org,AVA-KB0001 - AVA Toolset Running Lists
+kevin.e.hill@vumc.org,keh@vumc.org,AVA-KB0004 - Support Contact Matrix
+kevin.e.hill@vumc.org,keh@vumc.org,AVA-KB0005 - RansomWare Report Procedure
+kevin.e.hill@vumc.org,keh@vumc.org,AVA-KB0009 - Linux Auth Scans
+kevin.e.hill@vumc.org,keh@vumc.org,SOC-KB0006 - Security ScoreCard Requests
+kevin.e.hill@vumc.org,keh@vumc.org,VEC Active Vulnerability Assessment
+kevin.e.hill@vumc.org,keh@vumc.org,VEC Network Infrastructure Security
+kevin.e.hill@vumc.org,keh@vumc.org,VEC Security Operations & Access Control
+kevin.e.hill@vumc.org,keh@vumc.org,VEC Threat Detection and Response
+kevin.e.hill@vumc.org,keh@vumc.org,
+landon.cox@vumc.org,lc@vumc.org,VEC Active Vulnerability Assessment
+landon.cox@vumc.org,lc@vumc.org,VEC NIS Knowledge Base
+landon.cox@vumc.org,lc@vumc.org,VEC Network Infrastructure Security
+landon.cox@vumc.org,lc@vumc.org,VEC Security Operations & Access Control
+landon.cox@vumc.org,lc@vumc.org,VEC Threat Detection and Response
+landon.cox@vumc.org,lc@vumc.org,
+m.getreu@vumc.org,gmj.admin@vumc.org,VEC Network Infrastructure Security
+m.getreu@vumc.org,gmj.admin@vumc.org,VEC Security Operations & Access Control
+m.getreu@vumc.org,gmj.admin@vumc.org,VEC Threat Detection and Response
+manny.rodriguez@vumc.org,rm.admin@vumc.org,VEC Active Vulnerability Assessment
+manny.rodriguez@vumc.org,rm.admin@vumc.org,VEC NIS Knowledge Base
+manny.rodriguez@vumc.org,rm.admin@vumc.org,VEC Network Infrastructure Security
+manny.rodriguez@vumc.org,rm.admin@vumc.org,VEC Security Operations & Access Control
+manny.rodriguez@vumc.org,rm.admin@vumc.org,VEC Threat Detection and Response
+manny.rodriguez@vumc.org,rm.admin@vumc.org,
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0002 - PAN User-ID Mgr Reset Trap
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0003 - Incapsula WAF Resource URL Question
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0004 - Incapsula HTTPOnly Attribute
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0005 - Incapsula WAF Whitelisting
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0007 - Palo Alto log showing no resources available
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0008 - Accellion Monitoring
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0009 - Accellion VM Access
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0010 - Configuring PAN NAT
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0011 - Check Point - New Firewall Setup Part 1
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0012 - Check Point - New Firewall Setup Part 2
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0013 - OBSOLETE - Device Maintenance Mode Final
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0014 - Incapsula WAF New Site On-Boarding
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0015 - RADIUS Authentication Setup
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0016 - Accellion System Update
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0017 - Active Directory Administrative Center Install
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0018 - Bitlocker Recovery
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0019 - Check Point R77.30 Upgrade and Jumbo Hotfix
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0020 - Checkpoint Management Station Manual Backup
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0021 - NNM Device Maintenance Mode
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0022 - PAN DNS Sinkhole Exception
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0023 - Configuring Site-to-Site IPSec Tunnels on PAN devices
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0024 - OBSOLETE - Pointsec Add Administrator to CP Endpoint Security
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0025 - Accellion Meta Information Error
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0026 - CWS LMS proxy tunnel port
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0027 - DMCA Complaints
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0028 - OBSOLETE - Pointsec FDE Reset
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0029 - Network Security Immediate Action Drills
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0030 - URL Content Filtering - Technical Processes
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0031 - 10GB and 5GB Violators Final
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0032 - Check Point Firewall Rule Cleanup
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0033 - PAN Azure VPN
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0034 - Check Point Renaming Firewall
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0035 - Gemalto SafeNet MFA
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0035a - Gemalto SafeNet MFA Diagram
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0035b - SafeNet SAS Architecture
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0036 - Incapsula WAF Resource DNSSEC and WAF configuration
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0037 - Palo Alto Out-of-Band Console Access
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0038 - Firewall Pager Event Final
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0039 - OBSOLETE - How to configure a new guardian application
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0040 - New Provider 1 Check List
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0041 - CheckPoint Policy Verification
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0042 - Accellion Plug-in
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0043 - OBSOLETE - Pointsec FDE Recovery Login
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0044 - OBSOLETE - Pointsec FDE Recovery File
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0045 - CheckPoint DHCP Relay Configuration
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0046 - PAN Policy Based Forwarding
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0047 - PAN 60 Sec Batched Logging Activity
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0048 - PAN custom report not displaying data
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0049 - Bitlocker Displaying Encryption Strength
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0050 - PAN Change the HA Group ID
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0051 - PAN Migration Mgmt Services to DP Service Route
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0052 - PAN Panorama Invalid Term Error
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0053 - User-ID to IP Mapping
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0054 - External Data Center Emergency Access
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0055 - PAN API FQDN Import
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0056 - WannaCry Unpatched Unblock Request
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0057 - Checkpoint SNMP VI Edit
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0058 - PAN SFP Details CLI
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0059 - Pointsec Full Disk Encryption Retirement
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0061 - Surplussing Equipment Process
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0071 - User-ID Monitoring
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0080 - Naming Convention Standard for Policies
+matt.johns@vumc.org,mjo@vumc.org,NSO-KB0117 - NSO Linux VMs
+matt.johns@vumc.org,mjo@vumc.org,TDR Process Documentation
+matt.johns@vumc.org,mjo@vumc.org,TDR-KB0002 - Phishing Stats Script Setup
+matt.johns@vumc.org,mjo@vumc.org,VEC Active Vulnerability Assessment
+matt.johns@vumc.org,mjo@vumc.org,VEC NIS Knowledge Base
+matt.johns@vumc.org,mjo@vumc.org,VEC Network Infrastructure Security
+matt.johns@vumc.org,mjo@vumc.org,VEC Security Operations & Access Control
+matt.johns@vumc.org,mjo@vumc.org,VEC Threat Detection and Response
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0138 - VUMC Geo-Protection Country Blocks
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0205 - F5 BIG-IQ VAR Directory Purge
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0211 - Prisma Access Routes
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0215 - Prisma Access: GEO Blocking
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0223 - Remote Site Deployment Alert Initial Triage
+matt.palmer@vumc.org,mdp1@vumc.org,NSO-KB0231 - Prisma Access Browser NIS Task
+matt.palmer@vumc.org,mdp1@vumc.org,Pegasus Change #C0302393 - Enabling VU User ID Mappings on Fusion
+matt.palmer@vumc.org,mdp1@vumc.org,VEC CIS Knowledge Base
+matt.palmer@vumc.org,mdp1@vumc.org,VEC Cloud Infrastructure Security
+matt.palmer@vumc.org,mdp1@vumc.org,VEC NIS Knowledge Base
+matt.palmer@vumc.org,mdp1@vumc.org,VEC NIS Policies and Procedures
+matt.palmer@vumc.org,mdp1@vumc.org,VEC Network Infrastructure Security
+matt.palmer@vumc.org,mdp1@vumc.org,VEC Security Operations & Access Control
+matt.palmer@vumc.org,mdp1@vumc.org,VEC Threat Detection and Response
+matt.palmer@vumc.org,mdp1@vumc.org,
+matthew.t.mirse@vumc.org,mtm@vumc.org,VEC Active Vulnerability Assessment
+matthew.t.mirse@vumc.org,mtm@vumc.org,
+matthew.wood@vumc.org,wm.admin@vumc.org,VEC Security Operations & Access Control
+matthew.wood@vumc.org,wm.admin@vumc.org,VEC Threat Detection and Response
+micah.smith@vumc.org,sm1.admin@vumc.org,Custom Application Code Reference
+micah.smith@vumc.org,sm1.admin@vumc.org,EAA Application Scan Reports
+micah.smith@vumc.org,sm1.admin@vumc.org,EAA Application Scan Results  - Spark Ticket
+micah.smith@vumc.org,sm1.admin@vumc.org,EAA Application Scan Results - Pegasus 4.0
+micah.smith@vumc.org,sm1.admin@vumc.org,EAA Application Scan Results - Quiz Time
+micah.smith@vumc.org,sm1.admin@vumc.org,EAA Knowledge Base
+micah.smith@vumc.org,sm1.admin@vumc.org,Mend Integration Guides and Templates
+micah.smith@vumc.org,sm1.admin@vumc.org,Mend Onboarding Introduction Checklist
+micah.smith@vumc.org,sm1.admin@vumc.org,Mend Onboarding Introductory Email Template
+micah.smith@vumc.org,sm1.admin@vumc.org,Mend Onboarding Work Instructions
+micah.smith@vumc.org,sm1.admin@vumc.org,VEC Active Vulnerability Assessment
+micah.smith@vumc.org,sm1.admin@vumc.org,VEC Enterprise Application Assessment
+micah.smith@vumc.org,sm1.admin@vumc.org,VEC Network Infrastructure Security
+micah.smith@vumc.org,sm1.admin@vumc.org,VEC Security Operations & Access Control
+micah.smith@vumc.org,sm1.admin@vumc.org,
+michael.carlson.1@vumc.org,mjc1@vumc.org,SOC-KB0036 - Power Automate - PhishSim Automated Response
+michael.carlson.1@vumc.org,mjc1@vumc.org,VEC Active Vulnerability Assessment
+michael.carlson.1@vumc.org,mjc1@vumc.org,VEC NIS Knowledge Base
+michael.carlson.1@vumc.org,mjc1@vumc.org,VEC Network Infrastructure Security
+michael.carlson.1@vumc.org,mjc1@vumc.org,VEC Security Operations & Access Control
+michael.carlson.1@vumc.org,mjc1@vumc.org,VEC Threat Detection and Response
+michael.carlson.1@vumc.org,mjc1@vumc.org,
+michael.mohr@vumc.org,mm.admin@vumc.org,VEC Active Vulnerability Assessment
+michael.mohr@vumc.org,mm.admin@vumc.org,VEC NIS Knowledge Base
+michael.mohr@vumc.org,mm.admin@vumc.org,VEC Network Infrastructure Security
+michael.mohr@vumc.org,mm.admin@vumc.org,VEC Security Operations & Access Control
+michael.mohr@vumc.org,mm.admin@vumc.org,VEC Threat Detection and Response
+michael.mohr@vumc.org,mm.admin@vumc.org,
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,Bitsight Findings
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,Expanse Findings
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,Prisma Findings
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,VEC Active Vulnerability Assessment
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,Vulnerability Tracking for Scout
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,Zingbox Findings
+mimi.v.vertrees@vumc.org,vmv.admin@vumc.org,
+morgan.l.britt@vumc.org,bml.admin@vumc.org,2025 Penetration Testing Reports
+morgan.l.britt@vumc.org,bml.admin@vumc.org,AVA CVE Search with Device Name
+morgan.l.britt@vumc.org,bml.admin@vumc.org,AVA-KB0010 - Submitting Changes for Vulnerability Scans
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Health IT
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Hello World!
+morgan.l.britt@vumc.org,bml.admin@vumc.org,ISP
+morgan.l.britt@vumc.org,bml.admin@vumc.org,KQL Queries
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Orphan
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Pentest Reports
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Powershell
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Prisma Findings
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Python
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Scripts
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Use nslookup on Multiple Hosts
+morgan.l.britt@vumc.org,bml.admin@vumc.org,VEC
+morgan.l.britt@vumc.org,bml.admin@vumc.org,VEC Active Vulnerability Assessment
+morgan.l.britt@vumc.org,bml.admin@vumc.org,VUMC IT
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Vulnerability Tracking for Ransomware
+morgan.l.britt@vumc.org,bml.admin@vumc.org,Vulnerability Tracking for Scout
+morgan.l.britt@vumc.org,bml.admin@vumc.org,
+mykola.omelchenko@vumc.org,om.admin@vumc.org,2025 Penetration Testing Reports
+mykola.omelchenko@vumc.org,om.admin@vumc.org,AVA-KB0013 - Tenable Agents Cheatsheet
+mykola.omelchenko@vumc.org,om.admin@vumc.org,Scripts
+mykola.omelchenko@vumc.org,om.admin@vumc.org,VEC Active Vulnerability Assessment
+mykola.omelchenko@vumc.org,om.admin@vumc.org,
+nate.a.ford@vumc.org,naf@vumc.org,TDR-KB0003 - Business Continuity
+nate.a.ford@vumc.org,naf@vumc.org,TDR-KB0004 - Email Litigation Hold Name Changes
+nate.a.ford@vumc.org,naf@vumc.org,TDR-KB0006 - Data Loss Detection (lite)
+nate.a.ford@vumc.org,naf@vumc.org,VEC Active Vulnerability Assessment
+nate.a.ford@vumc.org,naf@vumc.org,VEC Security Operations & Access Control
+nate.a.ford@vumc.org,naf@vumc.org,VEC Threat Detection and Response
+nate.a.ford@vumc.org,naf@vumc.org,
+niles.herr.1@vumc.org,hn1.admin@vumc.org,VEC NIS Knowledge Base
+phoebe.ross@vumc.org,pdr@vumc.org,SOC - KB0038 - AS: Community Connect Temporary Passwords (MFA Registration)
+phoebe.ross@vumc.org,pdr@vumc.org,SOC- KB0027 - AS: Application Access - Security Manager
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0019 - AS: Application Access - Alaris Infusion
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0020 - AS: Application Access - IECG (SG-ISECG)
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0021 - AS: Application Access - StarPanel Classic
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0022 - AS: Application Access - PhilipsWeb
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0023 - AS: Application Access - Omnicell
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0024 - AS: Sunsetting-Application Access - POS Verifier/Estimator
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0025 - AS: Application Access - Tecsys
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0026 - AS: Application Access - PHG Armband
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0028 - AS: Security Manager Audit/Verification
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0029 - AS: Sunsetting-VHC Request Processing Via Pegasus
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0030 - AS: Sunsetting-VHC Request Processing Via eStar Portal
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0031 - AS: MFA (SafeNet)
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0033 - AS: Monthly/Weekly Stats (On Call Resource)
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0034 - AS: On-Call Tips and Tricks (Troubleshooting Methods)
+phoebe.ross@vumc.org,pdr@vumc.org,SOC-KB0035 AS: Password Resets/Duplicate VUMC ID Removals (AccessVUMC)
+phoebe.ross@vumc.org,pdr@vumc.org,VEC Security Operations & Access Control
+phoebe.ross@vumc.org,pdr@vumc.org,VEC Threat Detection and Response
+phoebe.ross@vumc.org,pdr@vumc.org,
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC - KB0040 - SOC: Weekly Stats Instructions
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC -KB0015 - TIS: Monthly TIS Metrics
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC -KB0016 - EDS: Monthly EDS Metrics
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC -KB0017 - SEO Monthly Metrics
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC-KB0010 - SOC Analyst Onboarding
+rakeem.murphy@vumc.org,rlm@vumc.org,SOC-KB0037 - AS: HR Disable
+rakeem.murphy@vumc.org,rlm@vumc.org,VEC Active Vulnerability Assessment
+rakeem.murphy@vumc.org,rlm@vumc.org,VEC NIS Knowledge Base
+rakeem.murphy@vumc.org,rlm@vumc.org,VEC Network Infrastructure Security
+rakeem.murphy@vumc.org,rlm@vumc.org,VEC Security Operations & Access Control
+rakeem.murphy@vumc.org,rlm@vumc.org,VEC Threat Detection and Response
+rakeem.murphy@vumc.org,rlm@vumc.org,
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0037 - Palo Alto Out-of-Band Console Access
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0060 - PAN Migration Tool
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0067 - PRTG
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0071 - User-ID Monitoring
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0086 - IP Management Access
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0092 - PAN GeoProtection Exemption Process
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0095 - Palo Alto License Deactivation
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0097 - Check Point firewall cluster upgrade to R80.10
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0101 - F5 VPN MFA Bypass
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0126 - Palo Alto Cortex XDR Agent Uninstall
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0142 - Splunk Indexes
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0145 - PAN Syslog (Splunk) Forwarding Options
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0151 - F5 Certificate Renewal Process
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0154 - Palo Alto DNSSEC
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0155 - SecureWorks Taegis XDR
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0162 - F5 Splunk Reporting for Machine Type
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0164 - SOS Toolkit
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0165 - Palo Alto Custom Syslog Formatting
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0169 - PA-7050 SNMP Trap Workaround
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0172 - Disable AV Check on F5 VPN
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0173 - Imperva DDoS Service
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0176 - F5 AWAF Policy Build Process
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0178 - HWatch Alert Suppression
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0180 - AWAF Splunk Logging
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0182 – SEO Profiler Tool
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0188 - GlobalProtect Backup VPN
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0190 - PAN Syslog Forwarding
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0193 - Building Splunk Alerts
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0194 - Cloud NGFW Logging Configuration
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0195 - Public F5 VIP DoS Protection
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0198 - F5 LTM SNAT and Self-IP Groups and Policies
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0200 - Strict L4 Checksum Disable (Edge)
+ryan.mcdaniel@vumc.org,rbm@vumc.org,"NSO-KB0203 - ""Undecided"" Sessions/Hung NFS Sessions"
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0204 - F5 MFA/RADIUS Failure Alerts and Dashboard
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0210 - Strata Cloud/AIOps Remote Site FW Management
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0212 - Remote Strata-Managed Firewall Deployment
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0232 - Algosec Firewall Policy Optimization
+ryan.mcdaniel@vumc.org,rbm@vumc.org,NSO-KB0233 - VEC-VUMC.ORG Domain
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS009 - Edge-MCE-VCH Firewall Cluster
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS010 - Palo Alto Log Collectors
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS013 - Dist-1207 Firewall Cluster (Decommissioned)
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS019 - Fusion-MCE-VCH Firewall Cluster
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS022 - Imperva DDoS Service
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS023 - Taegis XDR
+ryan.mcdaniel@vumc.org,rbm@vumc.org,TS030 - Community Connect
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC Active Vulnerability Assessment
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC CIS Knowledge Base
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC Cloud Infrastructure Security
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC NIS Knowledge Base
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC NIS Policies and Procedures
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC Network Infrastructure Security
+ryan.mcdaniel@vumc.org,rbm@vumc.org,VEC Security Operations & Access Control
+ryan.mcdaniel@vumc.org,rbm@vumc.org,
+said.mustafa@vumc.org,msa@vumc.org,AVA-KB0006 - SRFS SCAN REQUEST
+said.mustafa@vumc.org,msa@vumc.org,AVA-KB0008 - Enforcement Process
+said.mustafa@vumc.org,msa@vumc.org,AVA-KB0011 - Verifying Web-Security Headers
+said.mustafa@vumc.org,msa@vumc.org,SOC -KB0018 - SOC Process Improvement: Training Curriculum for SOC Member
+said.mustafa@vumc.org,msa@vumc.org,VEC Active Vulnerability Assessment
+said.mustafa@vumc.org,msa@vumc.org,VEC NIS Knowledge Base
+said.mustafa@vumc.org,msa@vumc.org,VEC Network Infrastructure Security
+said.mustafa@vumc.org,msa@vumc.org,VEC Security Operations & Access Control
+said.mustafa@vumc.org,msa@vumc.org,VEC Threat Detection and Response
+said.mustafa@vumc.org,msa@vumc.org,
+salvador.a.ortega@vumc.org,sao@vumc.org,VEC NIS Knowledge Base
+salvador.a.ortega@vumc.org,sao@vumc.org,VEC NIS Policies and Procedures
+salvador.a.ortega@vumc.org,sao@vumc.org,VEC Network Infrastructure Security
+salvador.a.ortega@vumc.org,sao@vumc.org,VEC Security Operations & Access Control
+salvador.a.ortega@vumc.org,sao@vumc.org,VEC Threat Detection and Response
+salvador.a.ortega@vumc.org,sao@vumc.org,
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0023 - Configuring Site-to-Site IPSec Tunnels on PAN devices
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0106 - VEC Quarantine EDL
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0116 - VEC SEO Infrastructure Backup and Retention
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0121 - Administering LiveAction
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0123 - F5 VPN Rate Limiting
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0128 - Palo Alto Cortex Data Lake Configuration Removal
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0134 - Adding Vulnerability Scanner Exemptions on PAN
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0138 - VUMC Geo-Protection Country Blocks
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0140 - Upgrading VEC SEO ESXi Server (Firmware)
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0155 - SecureWorks Taegis XDR
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0156 - BIP-IP Dashboard Memory Leak Issue
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0161 - VEC SEO Environment Classifications
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0163 - Palo Alto User-ID/Group Mapping Limitations
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0168 - VEC TDR Event Hubs / Taegis Cloud API Integrations
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0175 - VEC SEO: SSL Certificate Renewals
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0179 - Taegis Threat Watchlists
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0181 – System Monitoring Adjustments
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0184 – Edge-MCE-VCH QoS Process
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0189 - Manual PAN Firewall Virtual System Removal
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0206 – Panorama and NGFW Roll Back Procedure
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0213 - Prisma Access: Security Policy and Profiles
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0214 - Prisma Access: External Gateway Management
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0215 - Prisma Access: GEO Blocking
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0216 - Prisma Access: Global Protect Profile Management
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0217 - Prisma Access: Service Connections and Routes
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0218 - Prisma Access: Authentication and User-ID
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0219 - Prisma Access: GlobalProtect Client Upgrade Process
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0220 - Prisma Access: Autonomous Digital Experience Management (ADEM)
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0221 - Cloud Identity Agent
+sam.sharp@vumc.org,jss@vumc.org,NSO-KB0234 - Cloud Identity Engine RBAC Policy Creation
+sam.sharp@vumc.org,jss@vumc.org,TS003 - Dist-VSH Firewall Cluster
+sam.sharp@vumc.org,jss@vumc.org,TS004 - Dist-MRB4 Firewall Cluster
+sam.sharp@vumc.org,jss@vumc.org,TS005 - Dist-MRB2 Firewall Cluster
+sam.sharp@vumc.org,jss@vumc.org,TS006 - F5 Appliance (Decommissioned)
+sam.sharp@vumc.org,jss@vumc.org,TS007 - F5 CWS/LMS Web Forward Proxy Services (Decommissioned)
+sam.sharp@vumc.org,jss@vumc.org,TS008 - FaaS-DC1 Firewall Cluster - DECOM
+sam.sharp@vumc.org,jss@vumc.org,TS014 - DC3-NP-Cluster
+sam.sharp@vumc.org,jss@vumc.org,TS015 - Dist-VTH Firewall Cluster (Decommissioned)
+sam.sharp@vumc.org,jss@vumc.org,TS017 - Symantec Security Analytics (Decommissioned)
+sam.sharp@vumc.org,jss@vumc.org,TS018 - Dist-TVC Firewall Cluster (Decommissioned)
+sam.sharp@vumc.org,jss@vumc.org,TS019 - Fusion-MCE-VCH Firewall Cluster
+sam.sharp@vumc.org,jss@vumc.org,TS027 - Cloud Identity Engine
+sam.sharp@vumc.org,jss@vumc.org,TS029 - Prisma Access
+sam.sharp@vumc.org,jss@vumc.org,VEC Active Vulnerability Assessment
+sam.sharp@vumc.org,jss@vumc.org,VEC CIS Knowledge Base
+sam.sharp@vumc.org,jss@vumc.org,VEC Cloud Infrastructure Security
+sam.sharp@vumc.org,jss@vumc.org,VEC NIS Knowledge Base
+sam.sharp@vumc.org,jss@vumc.org,VEC NIS Policies and Procedures
+sam.sharp@vumc.org,jss@vumc.org,VEC Network Infrastructure Security
+sam.sharp@vumc.org,jss@vumc.org,VEC Security Operations & Access Control
+sam.sharp@vumc.org,jss@vumc.org,
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,VEC Active Vulnerability Assessment
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,VEC NIS Knowledge Base
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,VEC Network Infrastructure Security
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,VEC Security Operations & Access Control
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,VEC Threat Detection and Response
+seth.w.johnson.2@vumc.org,jsw.admin@vumc.org,
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0017 - Active Directory Administrative Center Install
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0160 - Policy Audit/Maintenance Procedure
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0169 - PA-7050 SNMP Trap Workaround
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0170 - PAN PCAP Export to SCP Server
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0185 - Logging Hints Issues
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0199 - Packet Capture on nGeniusONE (Netscout)
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0202 - Cortex XDR AD Group Addition
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0222 - PRTG Setup for Remote Radiology PA-460
+steven.r.vincent@vumc.org,sv1@vumc.org,NSO-KB0224 - Remote Radiology Configuration on PA-460
+steven.r.vincent@vumc.org,sv1@vumc.org,TS001 - DC-DC1 Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,TS003 - DC-DC3 Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,TS009 - Edge-MCE-VCH Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,TS016 - FaaS-MCE-VCH Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,TS020 - Dist-VEC Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,TS021 - FaaS-DC3 Firewall Cluster
+steven.r.vincent@vumc.org,sv1@vumc.org,VEC CIS Knowledge Base
+steven.r.vincent@vumc.org,sv1@vumc.org,VEC Cloud Infrastructure Security
+steven.r.vincent@vumc.org,sv1@vumc.org,VEC NIS Knowledge Base
+steven.r.vincent@vumc.org,sv1@vumc.org,VEC NIS Policies and Procedures
+steven.r.vincent@vumc.org,sv1@vumc.org,VEC Network Infrastructure Security
+steven.r.vincent@vumc.org,sv1@vumc.org,
+tanyika.johnson@vumc.org,jt.admin@vumc.org,VEC Active Vulnerability Assessment
+tanyika.johnson@vumc.org,jt.admin@vumc.org,VEC Network Infrastructure Security
+tanyika.johnson@vumc.org,jt.admin@vumc.org,VEC Security Operations & Access Control
+tanyika.johnson@vumc.org,jt.admin@vumc.org,VEC Threat Detection and Response
+tanyika.johnson@vumc.org,jt.admin@vumc.org,
+thomas.hornsby@vumc.org,th1@vumc.org,SOC-KB0012 - Microsoft Intune Lockout Exemption
+thomas.hornsby@vumc.org,th1@vumc.org,VEC Active Vulnerability Assessment
+thomas.hornsby@vumc.org,th1@vumc.org,VEC NIS Knowledge Base
+thomas.hornsby@vumc.org,th1@vumc.org,VEC Network Infrastructure Security
+thomas.hornsby@vumc.org,th1@vumc.org,VEC Security Operations & Access Control
+thomas.hornsby@vumc.org,th1@vumc.org,VEC Threat Detection and Response
+tina.aziz@vumc.org,at.admin@vumc.org,SOC-KB0002 - IMS: Monthly IMS Metrics
+tina.aziz@vumc.org,at.admin@vumc.org,VEC Active Vulnerability Assessment
+tina.aziz@vumc.org,at.admin@vumc.org,VEC Network Infrastructure Security
+tina.aziz@vumc.org,at.admin@vumc.org,VEC Security Operations & Access Control
+tina.aziz@vumc.org,at.admin@vumc.org,VEC Threat Detection and Response
+tina.aziz@vumc.org,at.admin@vumc.org,
+travis.gibson@vumc.org,gt.admin@vumc.org,VEC Active Vulnerability Assessment
+travis.gibson@vumc.org,gt.admin@vumc.org,VEC NIS Knowledge Base
+travis.gibson@vumc.org,gt.admin@vumc.org,VEC Network Infrastructure Security
+travis.gibson@vumc.org,gt.admin@vumc.org,VEC Security Operations & Access Control
+travis.gibson@vumc.org,gt.admin@vumc.org,VEC Threat Detection and Response
+travis.gibson@vumc.org,gt.admin@vumc.org,
+troy.m.helmle@vumc.org,htm.admin@vumc.org,VEC Active Vulnerability Assessment
+troy.m.helmle@vumc.org,htm.admin@vumc.org,VEC NIS Knowledge Base
+troy.m.helmle@vumc.org,htm.admin@vumc.org,VEC Network Infrastructure Security
+troy.m.helmle@vumc.org,htm.admin@vumc.org,VEC Security Operations & Access Control
+troy.m.helmle@vumc.org,htm.admin@vumc.org,VEC Threat Detection and Response
+troy.m.helmle@vumc.org,htm.admin@vumc.org,
+tyler.austell@vumc.org,tba@vumc.org,NS0-KB0227 - 3401 TEST-VPN
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0157 - Connect02.vumc.org User Restriction
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0158 - F5 UCS Archive and Policy Export
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0175 - VEC SEO: SSL Certificate Renewals
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0183 – Approved Optics/Legrand RMA Process
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0197 - NFS Client App-Override
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0207 - Keeper Security Admin
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0225 - Interface counters
+tyler.austell@vumc.org,tba@vumc.org,NSO-KB0229 - Remote Operator 440
+tyler.austell@vumc.org,tba@vumc.org,SOC-KB0011 - Business Continuity IAO
+tyler.austell@vumc.org,tba@vumc.org,TS008 - FaaS-DC1 Firewall Cluster - DECOM
+tyler.austell@vumc.org,tba@vumc.org,TS010 - Palo Alto Log Collectors
+tyler.austell@vumc.org,tba@vumc.org,TS013 - Dist-1207 Firewall Cluster (Decommissioned)
+tyler.austell@vumc.org,tba@vumc.org,TS017 - Symantec Security Analytics (Decommissioned)
+tyler.austell@vumc.org,tba@vumc.org,TS024 - Epic-DC1 Cluster
+tyler.austell@vumc.org,tba@vumc.org,TS025 - EPIC-DC3 Cluster
+tyler.austell@vumc.org,tba@vumc.org,TS026 - RS-Lebanon-SA
+tyler.austell@vumc.org,tba@vumc.org,TS028 - VEC NIS Logging Environment
+tyler.austell@vumc.org,tba@vumc.org,TS031 - Dist-Clarksville
+tyler.austell@vumc.org,tba@vumc.org,VEC Active Vulnerability Assessment
+tyler.austell@vumc.org,tba@vumc.org,VEC CIS Knowledge Base
+tyler.austell@vumc.org,tba@vumc.org,VEC Cloud Infrastructure Security
+tyler.austell@vumc.org,tba@vumc.org,VEC NIS Knowledge Base
+tyler.austell@vumc.org,tba@vumc.org,VEC NIS Policies and Procedures
+tyler.austell@vumc.org,tba@vumc.org,VEC Network Infrastructure Security
+tyler.austell@vumc.org,tba@vumc.org,VEC Security Operations & Access Control
+tyler.austell@vumc.org,tba@vumc.org,VEC Threat Detection and Response
+tyler.austell@vumc.org,tba@vumc.org,
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,AVA-KB0007 - Scorecard Review Request
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,VEC Active Vulnerability Assessment
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,VEC NIS Knowledge Base
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,VEC Network Infrastructure Security
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,VEC Security Operations & Access Control
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,VEC Threat Detection and Response
+tyler.barrett.1@vumc.org,bt.admin@vumc.org,
+william.pineda@vumc.org,pw.admin@vumc.org,VEC Active Vulnerability Assessment
+william.pineda@vumc.org,pw.admin@vumc.org,VEC NIS Knowledge Base
+william.pineda@vumc.org,pw.admin@vumc.org,VEC Network Infrastructure Security
+william.pineda@vumc.org,pw.admin@vumc.org,VEC Security Operations & Access Control
+william.pineda@vumc.org,pw.admin@vumc.org,VEC Threat Detection and Response
+william.pineda@vumc.org,pw.admin@vumc.org,

@@ -1,0 +1,3 @@
+pageId,title,operation,source_accountId,tla_accountId,action,status,detail
+157549934,VEC Active Vulnerability Assessment,read,,,TLA_LOOKUP_FAILED,SKIP,"Could not resolve TLA accountId from email/query. If email lookups are blocked, provide an Atlassian Admin API key + org_id in the INI so the script can resolve accountIds via the Organizations API: 'kad.admin@vumc.org'. (Cloud privacy may block lookups.)"
+157549934,VEC Active Vulnerability Assessment,update,,,TLA_LOOKUP_FAILED,SKIP,"Could not resolve TLA accountId from email/query. If email lookups are blocked, provide an Atlassian Admin API key + org_id in the INI so the script can resolve accountIds via the Organizations API: 'kad.admin@vumc.org'. (Cloud privacy may block lookups.)"
